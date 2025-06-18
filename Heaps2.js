@@ -68,6 +68,8 @@ class Heap {
       if (maxindex !== index) {
         this.#swap(index, maxindex)
         index = maxindex
+      } else {
+        return
       }
     }
   }
@@ -84,5 +86,9 @@ heap.insert(58)
 console.log(heap.getHeap())
 
 heap.insert(100)
+
+console.log(heap.getHeap())
+
+heap.remove(100)
 
 console.log(heap.getHeap())
