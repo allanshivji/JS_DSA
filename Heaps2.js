@@ -89,6 +89,6 @@ heap.insert(100)
 
 console.log(heap.getHeap())
 
-heap.remove(100)
+heap.remove() // will remove max value
 
 console.log(heap.getHeap())
